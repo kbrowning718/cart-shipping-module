@@ -19,6 +19,7 @@ body {
   top: 0;
   z-index: 1;
   opacity: .8;
+  display: none;
 }
 
 .tooltip-msg-container {
@@ -37,8 +38,8 @@ body {
 
 }
 
-.opacity-0 {
-  opacity: 0;
+.display-block {
+display: block;
 }
 
 .top-0 {
