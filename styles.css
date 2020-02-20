@@ -34,14 +34,13 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 3% 12%;
-  transition: all 1s ease;
+  transition: all 3s ease;
 
 }
 
 .top-0 {
   top: -800px;
-  transition: all 1s ease;
+  transition: all 3s ease;
 }
 
 .tooltip-header {
