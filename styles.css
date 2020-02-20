@@ -45,6 +45,7 @@ display: block;
 
 .top-0 {
   top: -800px;
+  transition: all 1s ease;
 }
 
 .tooltip-header {
