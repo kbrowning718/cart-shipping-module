@@ -32,13 +32,13 @@ var details = document.getElementById('fs-details')
 
 
 sDayAir.addEventListener("click", function (e) {
-fsMessage.innerHTML = "<span class='strong'>2nd Day Air:</span> Free Shipping not applicable with expedited shipping methods."
+fsMessage.innerHTML = "<span class='strong'>2nd Day Air:</span> Orders of $xx.xx or more are eligible for flat rates on expedited shipping methods."
   details.classList.remove('hide');
   details.classList.add('show');
 })
 
 nDayAir.addEventListener("click", function (e) {
-fsMessage.innerHTML = "<span class='strong'>Next Day Air:</span> Free Shipping not applicable with expedited shipping methods."
+fsMessage.innerHTML = "<span class='strong'>Next Day Air:</span> Orders of $xx.xx or more are eligible for flat rates on expedited shipping methods."
   details.classList.remove('hide');
     details.classList.add('show');
 })
