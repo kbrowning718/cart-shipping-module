@@ -54,7 +54,7 @@ var overlay = document.getElementById('overlay');
 var shipToolTip = document.getElementById('tooltip-container');
 
 questionToolTip.addEventListener("click", function (e) {
-  overlay.style.display === "block";
+  overlay.style.display = "block";
   shipToolTip.classList.remove('top-0');
 });
 
@@ -63,6 +63,6 @@ var closeIcons = document.getElementsByClassName('fa-times');
 for(var i=0; i<closeIcons.length; i++) {
   closeIcons[i].addEventListener('click', function(e) {
     shipToolTip.classList.add("top-0");
-    overlay.style.display === "none";
+    overlay.style.display = "none";
   });
 }
