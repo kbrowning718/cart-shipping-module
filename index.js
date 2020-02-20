@@ -48,3 +48,9 @@ standardShipping.addEventListener("click", function(e) {
   details.classList.remove('show');
   details.classList.add('hide');
 })
+
+var questionToolTip = document.getElementById('question-icon');
+
+questionToolTip.addEventListener('click', function (e) {
+  console.log("I got your click!");
+})
