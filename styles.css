@@ -67,6 +67,7 @@ body {
   border: 1px solid;
   max-height: 60%;
   background-color: #f9f9f9;
+  margin-top: 15px;
 }
 
 .fs-body-header-wrapper {
