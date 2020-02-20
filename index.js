@@ -50,7 +50,10 @@ standardShipping.addEventListener("click", function(e) {
 });
 
 var questionToolTip = document.getElementById('question-tool');
+var overlay = document.getElementById('overlay');
+var shipToolTip = document.getElementById('tooltip-container');
 
 questionToolTip.addEventListener("click", function (e) {
-  console.log("hello!");
+  overlay.classList.add('display-block');
+  shipToolTip.classList.remove('top-0');
 })

@@ -9,6 +9,10 @@ body {
   font-weight: 600;
 }
 
+.display-block {
+display: block;
+}
+
 
 .overlay {
   border: 1px solid;
@@ -20,6 +24,7 @@ body {
   z-index: 1;
   opacity: .8;
   display: none;
+  transition: all 1s ease;
 }
 
 .tooltip-msg-container {
@@ -36,10 +41,6 @@ body {
   margin: 3% 12%;
   transition: all 1s ease;
 
-}
-
-.display-block {
-display: block;
 }
 
 .top-0 {
