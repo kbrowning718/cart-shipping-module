@@ -47,4 +47,10 @@ standardShipping.addEventListener("click", function(e) {
   fsMessage.innerHTML = "<span id='fs-label' class='strong'>Standard Ground:</span> Only <span id='fs-price' class='fs-price'>$126.00</span> until free shipping."
   details.classList.remove('show');
   details.classList.add('hide');
+});
+
+var questionToolTip = document.getElementById('question-tool');
+
+questionToolTip.addEventListener("click", function (e) {
+  console.log("hello!");
 })
