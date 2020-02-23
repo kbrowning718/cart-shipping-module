@@ -66,7 +66,6 @@ for(var i=0; i<closeIcons.length; i++) {
     shipToolTip.classList.add("top-0");
     overlay.style.display = "none";
     responseContainer.innerHTML = "";
-    notActive[j].classList.remove('clicked-feedback');
 
 var notActive = document.getElementsByClassName('feedback-container');
 for (var k = 0; k < notActive.length; k++) {
@@ -74,8 +73,6 @@ for (var k = 0; k < notActive.length; k++) {
         notActive[k].classList.remove('clicked-feedback');
       }
     }
-
-
   });
 
 var feedbackButton = document.getElementsByClassName('feedback-button');
