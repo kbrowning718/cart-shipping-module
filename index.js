@@ -66,6 +66,16 @@ for(var i=0; i<closeIcons.length; i++) {
     shipToolTip.classList.add("top-0");
     overlay.style.display = "none";
     responseContainer.innerHTML = "";
+    notActive[j].classList.remove('clicked-feedback');
+
+var notActive = document.getElementsByClassName('feedback-container');
+for (var k = 0; k < notActive.length; k++) {
+      if(notActive[k].classList.contains('clicked-feedback')) {
+        notActive[k].classList.remove('clicked-feedback');
+      }
+    }
+
+
   });
 
 var feedbackButton = document.getElementsByClassName('feedback-button');
@@ -74,13 +84,6 @@ for (var j = 0; j < feedbackButton.length; j++) {
   feedbackButton[j].addEventListener('click', function (e) {
     responseContainer.innerHTML = "<p>Thank you for your feedback.<p>";
 
-var notActive = document.getElementsByClassName('feedback-container');
-for (var k = 0; k < notActive.length; k++) {
-  console.log(notActive[k].classList)
-  if(notActive[k].classList.contains('clicked-feedback')) {
-    notActive[k].classList.remove('clicked-feedback');
-  }
-}
 
   clickedButton = e.target;
 if(clickedButton.classList.contains('feedback-button')) {
