@@ -76,6 +76,7 @@ for (var j = 0; j < feedbackButton.length; j++) {
 
 var notActive = document.getElementsByClassName('feedback-container');
 for (var k = 0; k < notActive.length; k++) {
+  console.log(notActive[k].classList)
   if(notActive[k].classList.contains('clicked-feedback')) {
     notActive[k].classList.remove('clicked-feedback');
   }
