@@ -94,7 +94,6 @@ margin: 5px 10px;
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 0px 0px 10px 0px;
 }
 
 .feedback-button {
@@ -122,7 +121,7 @@ box-shadow: 3px 3px 6px -3px rgba(249,249,249,0.2);
 
 .response-container {
   width: 100%;
-  max-height: 100%;
+  max-height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
