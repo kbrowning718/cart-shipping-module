@@ -65,4 +65,17 @@ for(var i=0; i<closeIcons.length; i++) {
     shipToolTip.classList.add("top-0");
     overlay.style.display = "none";
   });
+
+var responseContainerText = document.getElementById('response-container-text');
+var feedbackButton = document.getElementByClassName('feedback-button');
+
+for (var j = 0; j < feedbackButton.length; j++) {
+  feedbackButton[j].addEventListener('click', function (e) {
+    responseContainerText.innerHTML = "Thank you for your feedback.";
+  });
+
+  if(shipToolTip.classList.contains('top-0')) {
+    responseContainerText.innerHTML = "";
+  }
+}
 }
