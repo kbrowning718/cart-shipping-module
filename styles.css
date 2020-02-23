@@ -34,7 +34,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  transition: all 3s ease;
+  transition: top 1.3s ease;
   bottom: calc(100% - 90%);
   left: calc(100% - 90%);
 
@@ -42,7 +42,7 @@ body {
 
 .top-0 {
   top: -800px;
-  transition: all 3s ease;
+  transition: top 1.3s ease;
 }
 
 .tooltip-header {
