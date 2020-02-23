@@ -67,7 +67,7 @@ for(var i=0; i<closeIcons.length; i++) {
   });
 
 var responseContainerText = document.getElementById('response-container-text');
-var feedbackButton = document.getElementByClassName('feedback-button');
+var feedbackButton = document.getElementsByClassName('feedback-button');
 
 for (var j = 0; j < feedbackButton.length; j++) {
   feedbackButton[j].addEventListener('click', function (e) {
