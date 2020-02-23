@@ -81,10 +81,11 @@ for (var k = 0; k < notActive.length; k++) {
   }
 }
 
-  clickedButton = e.target;
-if(clickedButton.classList.contains('feedback-button')) {
-clickedButton.classList.add("clicked-feedback");
-  } else if(clickedButton.classList.contains('feedback-label')) {
+var clickedButton = e.target;
+
+if(clickedButton.classList.contains("feedback-button")) {
+  clickedButton.classList.add("clicked-feedback");
+} else if(clickedButton.classList.contains('feedback-label')) {
     clickedButton.parentElement.classList.add('clicked-feedback');
   }
   });
