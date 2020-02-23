@@ -72,7 +72,7 @@ var feedbackButton = document.getElementsByClassName('feedback-button');
 for (var j = 0; j < feedbackButton.length; j++) {
   feedbackButton[j].addEventListener('click', function (e) {
     if(shipToolTip.classList.contains('top-0')) {
-      responseContainer.innerHTML = "<p></p>";
+      responseContainer.innerHTML = "<p>Test</p>";
     } else {
     responseContainer.innerHTML = "<p>Thank you for your feedback.<p>";
     }
