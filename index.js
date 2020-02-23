@@ -74,7 +74,7 @@ for (var j = 0; j < feedbackButton.length; j++) {
   feedbackButton[j].addEventListener('click', function (e) {
     responseContainer.innerHTML = "<p>Thank you for your feedback.<p>";
 
-var notActive = document.getElementByClassName('feedback-container');
+var notActive = document.getElementsByClassName('feedback-container');
 for (var k = 0; k < notActive.length; k++) {
   if(notActive[k].classList.contains('clicked-feedback')) {
     notActive[k].classList.remove('clicked-feedback');
