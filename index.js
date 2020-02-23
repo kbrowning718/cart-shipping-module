@@ -75,7 +75,7 @@ for (var j = 0; j < feedbackButton.length; j++) {
   });
 
   if(shipToolTip.classList.contains('top-0')) {
-    responseContainerText.innerHTML = "";
+    responseContainer.innerHTML = "";
   }
 }
 }
