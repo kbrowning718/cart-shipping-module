@@ -67,11 +67,10 @@ for(var i=0; i<closeIcons.length; i++) {
     overlay.style.display = "none";
     responseContainer.innerHTML = "";
 
+
 var notActive = document.getElementsByClassName('feedback-container');
-for (var k = 0; k < notActive.length; k++) {
-      if(notActive[k].classList.contains('clicked-feedback')) {
-        notActive[k].classList.remove('clicked-feedback');
-      }
+    for (var k = 0; k < notActive.length; k++) {
+      notActive[k].classList.remove('clicked-feedback');
     }
   });
 
@@ -80,7 +79,6 @@ var feedbackButton = document.getElementsByClassName('feedback-button');
 for (var j = 0; j < feedbackButton.length; j++) {
   feedbackButton[j].addEventListener('click', function (e) {
     responseContainer.innerHTML = "<p>Thank you for your feedback.<p>";
-
 
   clickedButton = e.target;
 if(clickedButton.classList.contains('feedback-button')) {
