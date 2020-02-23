@@ -58,21 +58,25 @@ questionToolTip.addEventListener("click", function (e) {
   shipToolTip.classList.remove('top-0');
 });
 
+
+
+
 var responseContainer = document.getElementById('response-container');
 var closeIcons = document.getElementsByClassName('fa-times');
 
 for(var i=0; i<closeIcons.length; i++) {
+
+  var feedbackButton = document.getElementsByClassName('feedback-button');
+  for (var j = 0; j < feedbackButton.length; j++) {
   closeIcons[i].addEventListener('click', function(e) {
     shipToolTip.classList.add("top-0");
     overlay.style.display = "none";
     responseContainer.innerHTML = "";
   });
 
-var feedbackButton = document.getElementsByClassName('feedback-button');
-
-for (var j = 0; j < feedbackButton.length; j++) {
   feedbackButton[j].addEventListener('click', function (e) {
     responseContainer.innerHTML = "<p>Thank you for your feedback.<p>";
+  });
 
 var notActive = document.getElementsByClassName('feedback-container');
 for (var k = 0; k < notActive.length; k++) {
@@ -86,8 +90,13 @@ var clickedButton = e.target;
 if(clickedButton.classList.contains("feedback-button")) {
   clickedButton.classList.add("clicked-feedback");
 } else if(clickedButton.classList.contains('feedback-label')) {
-    clickedButton.parentElement.classList.add('clicked-feedback');
+    clickedButton.parentElement.classList.toggle('clicked-feedback');
   }
+}
+
+
+
   });
+}
 }
 }
