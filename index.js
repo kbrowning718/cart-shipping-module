@@ -58,24 +58,21 @@ questionToolTip.addEventListener("click", function (e) {
   shipToolTip.classList.remove('top-0');
 });
 
+var responseContainer = document.getElementById('response-container');
 var closeIcons = document.getElementsByClassName('fa-times');
 
 for(var i=0; i<closeIcons.length; i++) {
   closeIcons[i].addEventListener('click', function(e) {
     shipToolTip.classList.add("top-0");
     overlay.style.display = "none";
+    responseContainer.innerHTML = "";
   });
 
-var responseContainer = document.getElementById('response-container');
 var feedbackButton = document.getElementsByClassName('feedback-button');
 
 for (var j = 0; j < feedbackButton.length; j++) {
   feedbackButton[j].addEventListener('click', function (e) {
-    if(shipToolTip.classList.contains('top-0')) {
-      responseContainer.innerHTML = "<p>Test</p>";
-    } else {
     responseContainer.innerHTML = "<p>Thank you for your feedback.<p>";
-    }
   });
 }
 }
