@@ -74,9 +74,20 @@ for (var j = 0; j < feedbackButton.length; j++) {
   feedbackButton[j].addEventListener('click', function (e) {
     responseContainer.innerHTML = "<p>Thank you for your feedback.<p>";
 
-        clickedButton = e.target;
+var notActive = document.getElementByClassName('feedback-container');
+for (var k = 0; k < notActive.length; k++) {
+  if(notActive[k].classList.contains('clicked-feedback')) {
+    notActive[k].classList.remove('clicked-feedback');
+  }
+}
 
-    clickedButton.classList.toggle("clicked-feedback");
+  clickedButton = e.target;
+if(clickedButton.classList.contains('feedback-button')) {
+
+    clickedButton.classList.add("clicked-feedback");
+  } else if(clickedButton.classList.contains('feedback-label')) {
+    clickedButton.parentElement.classList.add('clicked-feedback');
+  }
   });
 }
 }
