@@ -66,7 +66,7 @@ for(var i=0; i<closeIcons.length; i++) {
     overlay.style.display = "none";
   });
 
-var responseContainerText = document.getElementById('response-container-text');
+var responseContainer = document.getElementById('response-container');
 var feedbackButton = document.getElementsByClassName('feedback-button');
 
 for (var j = 0; j < feedbackButton.length; j++) {
