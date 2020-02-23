@@ -79,7 +79,7 @@ var feedbackButton = document.getElementsByClassName('feedback-button');
 for (var j = 0; j < feedbackButton.length; j++) {
   feedbackButton[j].addEventListener('click', function (e) {
     responseContainer.innerHTML = "<p>Thank you for your feedback.<p>";
-    if(feedbackButton[j] !== e.target) {
+    if(feedbackbutton[j].classList.contains('clicked-feedback')) {
       feedbackButton[j].classList.remove('clicked-feedback');
     }
 
