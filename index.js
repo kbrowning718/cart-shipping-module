@@ -82,8 +82,8 @@ for (var j = 0; j < feedbackButton.length; j++) {
 
   clickedButton = e.target;
 if(clickedButton.classList.contains('feedback-button')) {
-
-    clickedButton.classList.add("clicked-feedback");
+  notActive[k].classList.remove('clicked-feedback');
+clickedButton.classList.add("clicked-feedback");
   } else if(clickedButton.classList.contains('feedback-label')) {
     clickedButton.parentElement.classList.add('clicked-feedback');
   }
