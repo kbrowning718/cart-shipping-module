@@ -51,6 +51,17 @@ body {
   font-weight: 400;
 }
 
+@media only screen and (max-width:576px) {
+  .tooltip-msg-container {
+    max-height: 75%;
+    width: 75%;
+  }
+
+  .tooltip-header {
+    font-size: 1.5em;
+  }
+}
+
 .tooltip-header-container {
   width: 100%;
   border: 1px solid;
@@ -60,7 +71,7 @@ body {
 }
 
 .fas.fa-times {
-  font-size: 30px;
+  font-size: 1.7em;
 margin: 5px 10px;
 }
 
@@ -83,13 +94,13 @@ margin: 5px 10px;
 
 .feedback-button {
   border: 1px solid;
- height: 50px;
+ max-height: 50px;
   width: 40%;
   margin: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px;
+  padding: 10px;
 }
 
 .fas.fa-thumbs-up, .fas.fa-thumbs-down, .feedback-button > p  {
