@@ -56,7 +56,8 @@ body {
   .tooltip-msg-container {
     max-height: 75%;
     width: 75%;
-    bottom: calc(100% - 78%);
+    bottom: calc(100% - 75%);
+    left: calc(100% - 88%);
   }
 
   .tooltip-header {
@@ -112,6 +113,11 @@ margin: 25px;
   align-items: center;
   justify-content: center;
   padding: 10px;
+}
+
+.clicked-feedback {
+  color: #333;
+  background-color: #fff;
 }
 
 .fas.fa-thumbs-up, .fas.fa-thumbs-down, .feedback-button > p  {
