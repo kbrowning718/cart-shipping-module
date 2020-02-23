@@ -73,7 +73,10 @@ var feedbackButton = document.getElementsByClassName('feedback-button');
 for (var j = 0; j < feedbackButton.length; j++) {
   feedbackButton[j].addEventListener('click', function (e) {
     responseContainer.innerHTML = "<p>Thank you for your feedback.<p>";
-    feedbackButton[j].classList.toggle("clicked-feedback");
+
+        clickedButton = e.target;
+
+    clickedButton.classList.toggle("clicked-feedback");
   });
 }
 }
