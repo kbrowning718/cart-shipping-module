@@ -66,16 +66,12 @@ body {
   .feedback-body-container {
     width: unset;
   }
-  .fas.fa-thumbs-up, .fas.fa-thumbs-down, .feedback-button > p  {
-    font-size: 1em;
-  }
 
 
 }
 
 .tooltip-header-container {
   width: 100%;
-  border: 1px solid;
   max-height: 60px;
   display: flex;
   justify-content: flex-end;
@@ -87,7 +83,6 @@ margin: 5px 10px;
 }
 
 .tooltip-body-container {
-  border: 1px solid;
   width: 90%;
   line-height: 1.5;
   font-size: 1.2em;
@@ -115,7 +110,7 @@ margin: 5px 10px;
 }
 
 .fas.fa-thumbs-up, .fas.fa-thumbs-down, .feedback-button > p  {
-  font-size: 1.2em;
+  font-size: .9em;
   margin: 5px;
 }
 
