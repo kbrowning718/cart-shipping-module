@@ -42,6 +42,7 @@ body {
 
 .top-0 {
   top: -800px;
+  opacity: 0;
   transition: top 1.3s ease;
 }
 
