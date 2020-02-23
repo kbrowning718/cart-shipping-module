@@ -68,7 +68,7 @@ for(var i=0; i<closeIcons.length; i++) {
     responseContainer.innerHTML = "";
 
 
-var notActive = document.getElementsByClassName('feedback-container');
+var notActive = document.getElementsByClassName('feedback-button');
     for (var k = 0; k < notActive.length; k++) {
       notActive[k].classList.remove('clicked-feedback');
     }
