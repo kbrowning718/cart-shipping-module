@@ -79,13 +79,11 @@ var feedbackButton = document.getElementsByClassName('feedback-button');
 for (var j = 0; j < feedbackButton.length; j++) {
   feedbackButton[j].addEventListener('click', function (e) {
     responseContainer.innerHTML = "<p>Thank you for your feedback.<p>";
-    if(feedbackbutton[j].classList.contains('clicked-feedback')) {
-      feedbackButton[j].classList.remove('clicked-feedback');
-    }
-    feedbackButton[j].classList.add('clicked-feedback');
-
 
   clickedButton = e.target;
+  if(feedbackbutton[j].classList.contains('clicked-feedback')) {
+    feedbackButton[j].classList.remove('clicked-feedback');
+  }
 if(clickedButton.classList.contains('feedback-button')) {
 clickedButton.classList.add("clicked-feedback");
   } else if(clickedButton.classList.contains('feedback-label')) {
