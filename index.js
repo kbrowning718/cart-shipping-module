@@ -82,6 +82,8 @@ for (var j = 0; j < feedbackButton.length; j++) {
     if(feedbackbutton[j].classList.contains('clicked-feedback')) {
       feedbackButton[j].classList.remove('clicked-feedback');
     }
+    feedbackButton[j].classList.add('clicked-feedback');
+
 
   clickedButton = e.target;
 if(clickedButton.classList.contains('feedback-button')) {
