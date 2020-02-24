@@ -80,6 +80,7 @@ for (var j = 0; j < feedbackButton.length; j++) {
   feedbackButton[j].addEventListener('click', function (e) {
     responseContainer.innerHTML = "<p>Thank you for your feedback.<p>";
     feedbackButton[j].classList.add('clicked-feedback');
+    console.log(feedbackButton[j].classList);
 
 if(clickedButton.classList.contains('feedback-button')) {
 clickedButton.classList.add("clicked-feedback");
