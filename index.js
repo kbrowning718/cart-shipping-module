@@ -85,11 +85,9 @@ if(clickedButton.classList.contains('feedback-label')) {
     clickedButton.parentElement.classList.add('clicked-feedback');
   }
 
-if(clickedButton.nextElementSibling.classList.contains('clicked-feedback') {
+if(clickedButton.nextElementSibling.classList.contains('clicked-feedback')) {
   clickedButton.nextElementSibling.classList.remove('clicked-feedback');
 }
-))
-
   });
 }
 }
