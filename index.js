@@ -35,13 +35,13 @@ sDayAir.addEventListener("click", function (e) {
 fsMessage.innerHTML = "<span class='strong'>2nd Day Air:</span> Orders of $xx.xx or more are eligible for flat rates on expedited shipping methods."
   details.classList.remove('hide');
   details.classList.add('show');
-})
+});
 
 nDayAir.addEventListener("click", function (e) {
 fsMessage.innerHTML = "<span class='strong'>Next Day Air:</span> Orders of $xx.xx or more are eligible for flat rates on expedited shipping methods."
   details.classList.remove('hide');
     details.classList.add('show');
-})
+});
 
 standardShipping.addEventListener("click", function(e) {
   fsMessage.innerHTML = "<span id='fs-label' class='strong'>Standard Ground:</span> Only <span id='fs-price' class='fs-price'>$126.00</span> until free shipping."
@@ -54,6 +54,7 @@ var overlay = document.getElementById('overlay');
 var shipToolTip = document.getElementById('tooltip-container');
 
 questionToolTip.addEventListener("click", function (e) {
+  console.log('hello');
   overlay.style.display = "block";
   shipToolTip.classList.remove('top-0');
 });
@@ -85,7 +86,7 @@ for (var j = 0; j < feedbackButton.length; j++) {
     if(clickedButton.nextElementSibling.classList.contains('clicked-feedback')) {
       clickedButton.nextElementSibling.classList.remove('clicked-feedback');
     }
-    
+
 if(clickedButton.classList.contains('feedback-label')) {
     clickedButton.parentElement.classList.add('clicked-feedback');
   }
