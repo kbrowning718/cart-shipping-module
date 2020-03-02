@@ -61,7 +61,7 @@ questionToolTip.addEventListener("click", function (e) {
 
 var responseContainer = document.getElementById('response-container');
 var closeIcons = document.getElementsByClassName('fa-times');
-var labels = document.getElementByClassName('feedback-label');
+var labels = document.getElementsByClassName('feedback-label');
 
 for(var i=0; i<closeIcons.length; i++) {
   closeIcons[i].addEventListener('click', function(e) {
