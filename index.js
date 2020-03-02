@@ -75,6 +75,12 @@ var notActive = document.getElementsByClassName('feedback-button');
     }
   });
 
+  var feedbackContainer = document.getElementsByClassName('feedback-container');
+
+  for(l = 0; l < feedbackContainer.length; l++) {
+      console.log(feedbackContainer[1]);
+  }
+
 
 var feedbackButton = document.getElementsByClassName('feedback-button');
 
