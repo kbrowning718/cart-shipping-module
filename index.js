@@ -84,17 +84,6 @@ for (var j = 0; j < feedbackButton.length; j++) {
     responseContainer.innerHTML = "<p>Thank you for your feedback.<p>";
     clickedButton.classList.add('clicked-feedback');
 
-    var feedbackContainer = document.getElementsByClassName('feedback-container');
-
-    for(l = 0; l < feedbackContainer.length; l++) {
-      feedbackContainer[l].addEventListener("click", function (e) {
-        if(feedbackContainer[l].classList.contains('clicked-feedback') {
-          feedbackContainer[l].nextElementSibling.classList.remove('clicked-feedback');
-        }
-      });
-    }
-
-
     if(clickedButton.classList.contains('feedback-label')) {
         clickedButton.parentElement.classList.add('clicked-feedback');
       }
