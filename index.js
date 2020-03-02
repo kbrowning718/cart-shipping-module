@@ -67,6 +67,7 @@ for(var i=0; i<closeIcons.length; i++) {
     shipToolTip.classList.add("top-0");
     overlay.style.display = "none";
     responseContainer.innerHTML = "";
+    clickedButton.parentElement.classList.remove('clicked-feedback');
 
 
 var notActive = document.getElementsByClassName('feedback-button');
