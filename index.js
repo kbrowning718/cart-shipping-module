@@ -93,6 +93,10 @@ for (var j = 0; j < feedbackButton.length; j++) {
         clickedButton.parentElement.classList.add('clicked-feedback');
       }
 
+      if(clickedButton.nextElementSibling.classList.contains('clicked-feedback')) {
+        clickedButton.nextElementSibling.classList.remove('clicked-feedback');
+      }
+
   });
 
 }
