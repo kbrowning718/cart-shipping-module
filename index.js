@@ -96,3 +96,4 @@ if(clickedButton.nextElementSibling.classList.contains('clicked-feedback')) {
 }
   });
 }
+}
