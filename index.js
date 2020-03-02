@@ -90,11 +90,5 @@ for (var j = 0; j < feedbackButton.length; j++) {
 if(clickedButton.classList.contains('feedback-label')) {
     clickedButton.parentElement.classList.add('clicked-feedback');
   }
-
-if(clickedButton.nextElementSibling.classList.contains('clicked-feedback')) {
-  clickedButton.classList.add('clicked-feedback');
-  clickedButton.nextElementSibling.classList.remove('clicked-feedback');
-}
   });
-}
 }
