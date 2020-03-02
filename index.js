@@ -91,13 +91,13 @@ for (var j = 0; j < feedbackButton.length; j++) {
         if(feedbackContainer[l].classList.contains('clicked-feedback') {
           feedbackContainer[l].nextElementSibling.classList.remove('clicked-feedback');
         }
-      })
+      });
+    }
 
 
     if(clickedButton.classList.contains('feedback-label')) {
         clickedButton.parentElement.classList.add('clicked-feedback');
       }
-        }
 
   });
 
