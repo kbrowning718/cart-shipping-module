@@ -61,13 +61,17 @@ questionToolTip.addEventListener("click", function (e) {
 
 var responseContainer = document.getElementById('response-container');
 var closeIcons = document.getElementsByClassName('fa-times');
+var labels = document.getElementByClassName('feedback-label');
 
 for(var i=0; i<closeIcons.length; i++) {
   closeIcons[i].addEventListener('click', function(e) {
+
+    for (var m = 0; m < labels.length; m++) {
+    labels[m].classList.remove('clicked-feedback');
     shipToolTip.classList.add("top-0");
     overlay.style.display = "none";
     responseContainer.innerHTML = "";
-    clickedButton.parentElement.classList.remove('clicked-feedback');
+    }
 
 
 var notActive = document.getElementsByClassName('feedback-button');
