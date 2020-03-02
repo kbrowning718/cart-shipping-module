@@ -92,6 +92,7 @@ if(clickedButton.classList.contains('feedback-label')) {
   }
 
 if(clickedButton.nextElementSibling.classList.contains('clicked-feedback')) {
+  clickedButton.classList.add('clicked-feedback');
   clickedButton.nextElementSibling.classList.remove('clicked-feedback');
 }
   });
