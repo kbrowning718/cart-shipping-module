@@ -51,7 +51,6 @@ var overlay = document.getElementById('overlay');
 var shipToolTip = document.getElementById('tooltip-container');
 
 questionToolTip.addEventListener("click", function (e) {
-  console.log('hello');
   overlay.style.display = "block";
   shipToolTip.classList.remove('top-0');
 });
@@ -74,6 +73,7 @@ for(var i=0; i<closeIcons.length; i++) {
 var notActive = document.getElementsByClassName('feedback-button');
     for (var k = 0; k < notActive.length; k++) {
       notActive[k].classList.remove('clicked-feedback');
+      notActive[k].classList.remove('disabled');
     }
   });
 
@@ -84,7 +84,10 @@ for (var i = 0; i < feedbackButton.length; i++) {
   feedbackButton[i].addEventListener('click', function (e) {
     responseContainer.innerHTML = "<p>Thank you for your feedback.<p>";
 
+
     for(var j = 0; j < feedbackButton.length; j++) {
+      feedbackButton[j].classList.add('disabled');
+
       if(feedbackButton[j].classList.contains('clicked-feedback')) {
         feedbackButton[j].classList.remove('clicked-feedback');
       }
@@ -96,6 +99,8 @@ for (var i = 0; i < feedbackButton.length; i++) {
       } else if(clickedButton.classList.contains('feedback-label')) {
       clickedButton.parentElement.classList.add('clicked-feedback');
 }
+
+
   });
 
 }

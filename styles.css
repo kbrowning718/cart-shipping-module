@@ -37,7 +37,12 @@ body {
   transition: top 1.3s ease;
   bottom: calc(100% - 70%);
   left: calc(100% - 75%);
+  padding: 20px;
 
+}
+
+.fas.fa-times {
+  z-index:1;
 }
 
 .top-0 {
@@ -92,7 +97,6 @@ margin: 25px;
   line-height: 1.5;
   font-size: 1.2em;
   padding: 10px;
-  margin: 20px;
   font-weight: 300;
   font-size: 1em;
   height: 100%;
@@ -113,6 +117,11 @@ margin: 25px;
   align-items: center;
   justify-content: center;
   padding: 10px;
+  cursor: pointer;
+}
+
+.disabled {
+pointer-events:none
 }
 
 .clicked-feedback {
@@ -128,7 +137,6 @@ margin: 25px;
 .feedback-button:hover {
   color: #333;
   background-color: #fff;
-  border: 2px solid;
 box-shadow: 3px 3px 6px -3px rgba(249,249,249,0.2);
 }
 
@@ -219,8 +227,12 @@ transition: all 1s ease;
 
 .fas.fa-question-circle {
   font-size: 24px;
+  cursor: pointer;
 }
 
+.fas.fa-times {
+  cursor:pointer;
+}
 .fas.fa-question-circle:hover {
   opacity: .7;
 }
@@ -245,6 +257,7 @@ transition: all 1s ease;
   justify-content: space-between;
   padding: 0px 20px;
   color: #333;
+  cursor: pointer;
 }
 
 .shipping-method-container:hover {
