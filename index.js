@@ -5,19 +5,16 @@ for (var i = 0; i < shippingMethods.length; i++) {
 
   shippingMethods[i].addEventListener("click", function(e) {
 
-    var notClickedShipping = document.getElementsByClassName("shipping-method-container");
-    var freeShipping = document.getElementById("free-shipping");
-
-    for (var j = 0; j < notClickedShipping.length; j++) {
-      if (notClickedShipping[j].classList.contains("clicked")) {
-        notClickedShipping[j].classList.remove("clicked");
+    for (var j = 0; j < shippingMethods.length; j++) {
+      if (shippingMethods[j].classList.contains("clicked")) {
+        shippingMethods[j].classList.remove("clicked");
       }
     }
     var clickedShipping = e.target;
     if (clickedShipping.classList.contains("shipping-method-container")) {
       clickedShipping.classList.add("clicked");
     } else if (clickedShipping.classList.contains("shipping-method-label")) {
-      clickedShipping.parentElement.classList.toggle("clicked");
+      clickedShipping.parentElement.classList.add("clicked");
     }
   });
 }
@@ -83,16 +80,22 @@ var notActive = document.getElementsByClassName('feedback-button');
 
 var feedbackButton = document.getElementsByClassName('feedback-button');
 
-for (var j = 0; j < feedbackButton.length; j++) {
-  feedbackButton[j].addEventListener('click', function (e) {
-    clickedButton = e.target;
+for (var i = 0; i < feedbackButton.length; i++) {
+  feedbackButton[i].addEventListener('click', function (e) {
     responseContainer.innerHTML = "<p>Thank you for your feedback.<p>";
-    clickedButton.classList.add('clicked-feedback');
 
-    if(clickedButton.classList.contains('feedback-label')) {
-        clickedButton.parentElement.classList.add('clicked-feedback');
+    for(var j = 0; j < feedbackButton.length; j++) {
+      if(feedbackButton[j].classList.contains('clicked-feedback')) {
+        feedbackButton[j].classList.remove('clicked-feedback');
       }
+    }
 
+    var clickedButton = e.target;
+      if(clickedButton.classList.contains('feedback-button')) {
+        clickedButton.classList.add('clicked-feedback');
+      } else if(clickedButton.classList.contains('feedback-label')) {
+      clickedButton.parentElement.classList.add('clicked-feedback');
+}
   });
 
 }
