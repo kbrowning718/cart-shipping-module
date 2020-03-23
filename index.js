@@ -55,6 +55,13 @@ questionToolTip.addEventListener("click", function (e) {
   shipToolTip.classList.remove('top-0');
 });
 
+var learnMoreLink = document.getElementById('fs-details');
+
+learnMoreLink.addEventListener("click", function (e) {
+  overlay.style.display = "block";
+  shipToolTip.classList.remove('top-0');
+});
+
 var responseContainer = document.getElementById('response-container');
 var closeIcons = document.getElementsByClassName('fa-times');
 var labels = document.getElementsByClassName('feedback-label');
