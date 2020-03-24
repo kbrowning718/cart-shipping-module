@@ -209,7 +209,6 @@ transition: all 1s ease;
 
 .fs-body-container {
   border: 1px solid;
-  max-height: 60%;
   background-color: #f9f9f9;
   margin-top: 15px;
 }
@@ -339,4 +338,10 @@ transition: all 1s ease;
   left: calc(100% - 90%);
 }
 
+}
+
+@media only screen and (max-height: 450px) {
+  .tooltip-msg-container {
+    bottom: calc(100% - 90%);
+}
 }
