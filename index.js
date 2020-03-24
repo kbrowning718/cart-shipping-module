@@ -53,6 +53,7 @@ var shipToolTip = document.getElementById('tooltip-container');
 questionToolTip.addEventListener("click", function (e) {
   overlay.style.display = "block";
   shipToolTip.classList.remove('top-0');
+  document.body.classList.add('fixed');
 });
 
 var learnMoreLink = document.getElementById('fs-details');
@@ -60,6 +61,7 @@ var learnMoreLink = document.getElementById('fs-details');
 learnMoreLink.addEventListener("click", function (e) {
   overlay.style.display = "block";
   shipToolTip.classList.remove('top-0');
+  document.body.classList.add('fixed');
 });
 
 var responseContainer = document.getElementById('response-container');
@@ -74,6 +76,7 @@ for(var i=0; i<closeIcons.length; i++) {
     shipToolTip.classList.add("top-0");
     overlay.style.display = "none";
     responseContainer.innerHTML = "";
+    document.body.classList.remove('fixed');
     }
 
 

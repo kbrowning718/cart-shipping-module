@@ -5,6 +5,10 @@ body {
   font-family: "Roboto", san-serif;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .strong {
   font-weight: 600;
 }
