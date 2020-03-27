@@ -32,14 +32,14 @@ body {
   width: 35%;
   border: 2px solid #333;
   z-index: 2;
-  position: fixed;
+  position: absolute;
   background-color: #333;
   color: #fff;
   display: flex;
   align-items: center;
   flex-direction: column;
   transition: top 1.3s ease;
-  bottom: calc(100% - 60%);
+  top: calc(100% - 85%);
   left: calc(100% - 70%);
   padding: 20px;
 
@@ -73,7 +73,6 @@ body {
   .tooltip-msg-container {
     max-height: 75%;
     width: 75%;
-      bottom: calc(100% - 70%);
       left: calc(100% - 91%);
     }
   }
@@ -166,7 +165,6 @@ transition: all 1s ease;
 
 .fs-cutoff-wrapper {
   margin: 0 auto;
-  max-height: 20%;
   background-color: #fff;
 }
 
@@ -298,7 +296,6 @@ transition: all 1s ease;
   }
 
   .tooltip-msg-container {
-    bottom: calc(100% - 70%);
     left: calc(100% - 80%);
     width: 50%;
   }
@@ -311,7 +308,6 @@ transition: all 1s ease;
 
 @media only screen and (max-width: 699px) {
   .tooltip-msg-container {
-  bottom: calc(100% - 70%);
   left: calc(100% - 88%);
   width: 70%
 }
@@ -338,7 +334,6 @@ transition: all 1s ease;
 
 @media only screen and (max-width:420px) {
   .tooltip-msg-container {
-  bottom: calc(100% - 72%);
   left: calc(100% - 90%);
 }
 
@@ -346,6 +341,5 @@ transition: all 1s ease;
 
 @media only screen and (max-height: 450px) {
   .tooltip-msg-container {
-    bottom: calc(100% - 93%);
 }
 }
