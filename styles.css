@@ -341,5 +341,6 @@ transition: all 1s ease;
 
 @media only screen and (max-height: 450px) {
   .tooltip-msg-container {
+    top: calc(100% - 89%);
 }
 }
