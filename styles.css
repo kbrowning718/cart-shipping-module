@@ -351,8 +351,4 @@ transition: all 1s ease;
 .feedback-button {
   height: 15px;
 }
-
-.response-container {
-  max-height: 20px;
-}
 }
