@@ -340,7 +340,20 @@ transition: all 1s ease;
 }
 
 @media only screen and (max-height: 450px) {
+  .tooltip-body-container {
+    height: unset;
+  }
   .tooltip-msg-container {
+    font-size: 1em;
     top: calc(100% - 89%);
+    height: 270px;
+}
+
+.feedback-button {
+  height: 15px;
+}
+
+.response-container {
+  max-height: 20px;
 }
 }
