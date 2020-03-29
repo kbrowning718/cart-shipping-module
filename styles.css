@@ -346,8 +346,7 @@ transition: all 1s ease;
   .tooltip-msg-container {
     font-size: 1em;
     top: calc(100% - 89%);
-    height: 260px;
-    padding: 10px 20px;
+    height: 270px;
 }
 
 .feedback-button {
