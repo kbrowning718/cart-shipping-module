@@ -344,7 +344,7 @@ transition: all 1s ease;
   }
 
   .tooltip-msg-container {
-    font-size: 1em;
+    font-size: .9em;
     top: calc(100% - 89%);
     height: 270px;
 }
