@@ -346,11 +346,11 @@ transition: all 1s ease;
   .tooltip-msg-container {
     font-size: .9em;
     top: calc(100% - 89%);
-    height: 270px;
+    height: 300px;
 }
 
 .response-container {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .feedback-button {
